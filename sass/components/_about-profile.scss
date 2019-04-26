@@ -1,0 +1,37 @@
+.about-profile {
+    padding: 1rem 1.5rem;
+    // background-color: orange;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    &__image {
+        width: 50%;
+        height: 25rem;
+        position: relative;
+        top: 0;
+        left: 0;
+        background: url("../images/profile.jpg") no-repeat;
+        background-position: bottom center;
+        background-size: cover;
+        border-radius: 50%;
+        margin-right: 1rem;
+        box-shadow: $boxShadow-normal;
+    }
+
+    &__info {
+        font-size: 1.8rem;
+        font-family: 'Lato', sans-serif;
+        color: $color-light-grey;
+        margin-top: 2rem;
+        p {
+            margin-bottom: 1rem;
+            .pro-icon {
+                margin-right: 1rem;
+            }
+            
+        }
+    }
+}

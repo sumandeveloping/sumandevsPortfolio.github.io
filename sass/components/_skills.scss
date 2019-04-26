@@ -1,0 +1,62 @@
+.skills {
+    width: 100%;
+    position: relative;
+    height: 5rem;
+    padding: 5px;
+    // background: #25ff91;
+    background-color: $color-dark-grey;
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    .percent90 {
+        width: 90%;
+    }
+    .percent87 {
+        width: 87%;
+    }
+    .percent60 {
+        width: 60%;
+    }
+    .percent75 {
+        width: 75%;
+    }
+    .percent80 {
+        width: 80%;
+    }
+    &__percent {
+        height: 95%;
+        background-color: #11c56a;
+        color: $color-white;
+        border-radius: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: uppercase;
+        
+        
+        &--number {
+            font-size: 1.6rem;
+            position: relative;
+            left: 2rem;
+            font-weight: 400;
+        }
+        &--name {
+            background-color: $color-light-grey;
+            border-radius: 5rem;
+            width: 45px;
+            height: 33px;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            color: $color-light-green;
+            font-size: 1.4rem;
+            position: relative;
+            right: .3rem;
+            font-weight: 700;
+        }
+    }
+}
+
+.skills__percent.animation {
+    animation: leftToRight .5s ease-out;
+}

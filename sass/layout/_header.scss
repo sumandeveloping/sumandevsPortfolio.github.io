@@ -1,0 +1,222 @@
+.header {
+    width: 100%;
+    height: 100vh;
+    font-size: 1.6rem;
+    background-image: linear-gradient(to bottom, rgba($color-black, .7), rgba($color-black, .8)) ,url("../images/header.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
+    position: relative;
+
+    .topbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        background: $color-light-green; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, $color-light-green, $color-light-green); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, $color-light-green, $color-light-green); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        height: 6rem;
+        position: fixed;
+        z-index: 20;
+        color: $color-white;
+        transition: background .85s;
+
+        &__logo {
+            margin-left: 4rem;
+            padding-bottom: .5rem;
+            text-shadow: 0rem .3rem .7rem rgba($color-black, .4);
+
+            h1 {
+                color: $color-white;
+                font-size: 2.8rem;
+                letter-spacing: 4px;
+                font-family: 'Lobster', cursive;
+                font-weight: 400;
+                
+                .a {
+                    font-size: 3.6rem;
+                    margin: 0 .3rem;
+                    font-family: 'Open Sans', sans-serif;
+                    color: rgb(20, 19, 19);
+                    font-weight: 500;
+                }
+                
+                .b {
+                    color: rgb(20, 19, 19);
+                    font-size: 2.7rem;
+                    // text-transform: uppercase;
+                    font-weight: 400;
+                    letter-spacing: 1px;
+                    font-family: 'Open Sans', sans-serif;
+                }
+            }
+           
+        }
+
+        &__menu {
+            display: flex;
+            flex-direction: row;
+            // align-items: center;
+            color: $color-white !important;
+            text-align: center;
+            height: auto;
+            // background-color: cornflowerblue;
+        
+
+            li {
+                // background-color: tomato;
+                text-align: center;
+                margin-right: 1.5rem;
+                transition: .5s;
+
+                .nav-link {
+                    color: $color-light-grey;
+                    // background-color: #000;
+                    padding: 1rem 1.5rem;
+                    font-size: 1.6rem;
+                    text-transform: uppercase;
+                    letter-spacing: 1.5px;
+                    font-family: 'Open Sans', sans-serif;
+                    display: block;
+                    font-weight: 500;
+                    transition: transform .5s ease;
+                    position: relative;
+                    z-index: 1;
+                    // background-color: orange;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        z-index: -1;
+                        background-color: #26ae60;
+                        transform: scaleX(0);
+                        transform-origin: left;
+                        transition: transform .6s ease;
+                        opacity: 1;
+                    }
+
+                    &:hover {
+                        color: $color-white;
+
+                        &::before {
+                            opacity: 1;
+                            transform: scaleX(1);
+                            transform-origin: left;
+                        }
+
+                    }
+                }
+            }
+
+        }
+    }
+
+    .topbar.scrolled {
+        background: $color-dark-green; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, $color-light-green, $color-dark-green); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, $color-light-green, $color-dark-green); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    &__profile {
+        width: 30rem;
+        height: 30rem;
+        position: absolute;
+        top: 30%;
+        left: 25%;
+        border-radius: 50%;
+        background-image: url("../images/profile.jpg");
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: cover;
+
+    }
+
+    &__profileName {
+        position: absolute;
+        top: 65%;
+        left: 26%;
+        color: $color-dark-grey;
+        font-family: cursive;
+        
+
+        &--main {
+            font-size: 3.5rem;
+            letter-spacing: 4px;
+            font-family: 'Lobster', cursive;
+            color: $color-light-white;
+            font-weight: 300;
+            line-height: 1.7;
+        }
+
+        &--info {
+            font-size: 1.8rem;
+            font-family: cursive;
+            font-weight: 300;
+            margin-top: .5rem;
+        }
+
+        &--time {
+            font-size: 1.8rem;
+            font-weight: 300;
+            margin-top: 1rem;
+        }
+    }
+
+    &__content {
+        position: absolute;
+        top: 35%;
+        right: 10%;
+        font-family: 'Lato', sans-serif;
+        font-size: 2.5rem;
+        font-weight: 300;
+        letter-spacing: 1.5px;
+
+        &--quote {
+            color: $color-white;
+            font-weight: 300;
+            font-family: 'Playball', cursive;
+            position: relative;
+            .quote-open {
+                margin-right: 2rem;
+                position: absolute;
+                top: -30%;
+                left: 15%;
+                color: rgba($color-light-green, 0.849);
+            }
+            
+            &-sub {
+                display: block;
+                margin-left: 16rem;
+                position: relative;
+                .quote-close {
+                    margin-left: 2rem;
+                    margin-top: 2rem;
+                    position: absolute;
+                    top: 80%;
+                    right: 20%;
+                    color: rgba($color-light-green, 0.849);
+                }
+            }
+
+        }
+
+    }
+
+    &__button {
+        position: absolute;
+        top: 68%;
+        right: 30%;
+        font-size: 2.1rem;
+        // background-color: tomato;
+        width: auto;
+        height: auto;
+    
+    }
+}

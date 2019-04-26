@@ -1,0 +1,37 @@
+.mt-md {
+    margin-top: 10rem;
+}
+.ml-sm {
+    margin-left: 1rem;
+}
+.mb-big {
+    margin-bottom: 8rem;
+}
+
+.border-white {
+    border: 1px solid $color-white;
+}
+.border-tp {
+    border: 1px solid transparent;
+}
+.text-white {
+    color: $color-white;
+}
+.text-center {
+    text-align: center;
+}
+.text-small {
+    font-size: 1.1rem;
+}
+
+.hr-sm {
+    border-top: 1px solid rgba($color-dark-green, .85);
+    position: relative;
+    width: 10rem;
+    left: 47%;
+    margin: .5rem 0 1rem 0;
+}
+
+.text-shadow-md {
+    text-shadow: 0rem 1rem 1.5rem rgba($color-black, 0.2);
+}

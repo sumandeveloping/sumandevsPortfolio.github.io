@@ -1,0 +1,14 @@
+{
+  "name": "sumandevs",
+  "version": "1.0.0",
+  "description": "sumandevs portfolio",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Suman",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}

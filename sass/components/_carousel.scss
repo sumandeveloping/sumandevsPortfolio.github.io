@@ -1,0 +1,59 @@
+.carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    position: relative;
+    // background-color: orangered;
+    &__image {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        box-shadow: 0rem .5rem .5rem rgba($color-black, 0.2)
+    }
+
+    .img1 {
+        background: url("../images/client1.jpg") no-repeat;
+        background-position: top center;
+        background-size: cover;
+    }
+    .img2 {
+        background: url("../images/client2.jpg") no-repeat;
+        background-position: top center;
+        background-size: cover;
+    }
+    .img3 {
+        background: url("../images/client3.jpg") no-repeat;
+        background-position: top center;
+        background-size: cover;
+    }
+
+    &__name {
+        font-size: 1.95rem;
+        color: $color-dark-green;
+        font-weight: 400;
+        font-family: 'Lato', sans-serif;
+        margin: 1.5rem 0 1.5rem 0;
+    }
+    &__text {
+        font-size: 2.1rem;
+        margin: 1rem 0 1rem 0;
+        font-family: 'Dancing Script', cursive;
+        font-weight: 700;
+    }
+
+    &__qouteLeft {
+        position: relative;
+        font-size: 2rem;
+        color: $color-dark-grey;
+        left: -10%;
+    }
+
+    &__qouteRight {
+        position: relative;
+        font-size: 2rem;
+        color: $color-dark-grey;
+        left: 10%;
+    }
+}

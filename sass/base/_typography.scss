@@ -1,0 +1,11 @@
+.heading {
+    &__primary {
+        color: transparent;
+        font-size: 5rem;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        background-image: linear-gradient(to bottom right, $color-light-green, $color-dark-green); 
+        -webkit-background-clip: text;
+        text-shadow: 0rem .25rem .5rem rgba($color-black, .15);
+    }
+}

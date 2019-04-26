@@ -1,0 +1,43 @@
+.footer {
+    padding: 3rem 0 3rem 0;
+    background-color: rgba($color-black, .9);
+    width: 100%;
+
+    &-container {
+        width: 114rem;
+        height: auto;
+        padding: 1.5rem;
+        margin: .5rem auto;
+        // background-color: orange;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .copyright {
+            font-size: 1.1rem;
+            color: rgb(168, 168, 168);
+        }
+
+        .footer-menu {
+            width: 50%;
+            // background-color: aquamarine;
+            &__nav {
+                display: flex;
+                justify-content: space-between;
+                font-size: 1.3rem;
+
+                li > a {
+                    cursor: pointer;
+                    padding: 1rem;
+                    transition: all .15s ease-in;
+                    color: rgb(168, 168, 168);
+                    &:hover {
+                        color: $color-white;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
