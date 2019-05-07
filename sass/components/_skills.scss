@@ -24,6 +24,7 @@
         width: 80%;
     }
     &__percent {
+        opacity: 0;
         height: 95%;
         background-color: #11c56a;
         color: $color-white;
@@ -32,6 +33,7 @@
         justify-content: space-between;
         align-items: center;
         text-transform: uppercase;
+        transition: all .2s ease-in-out;
         
         
         &--number {
@@ -58,5 +60,6 @@
 }
 
 .skills__percent.animation {
+    opacity: 1;
     animation: leftToRight .5s ease-out;
 }

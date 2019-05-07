@@ -17,7 +17,9 @@
     }
 
     .aboutUs {
+        opacity: 0;
         padding: 1rem 1.5rem;
+        transition: .5s ease-in-out;
         // background-color: orange;
         &__text {
             color: $color-white;
@@ -37,6 +39,10 @@
         align-items: center;
         justify-content: center;
         color: $color-dark-green;
+        position: relative;
+        opacity: 0;
+        transform: translateX(-25rem);
+        transition: all .3s ease-in-out;
         p  {
             font-size: 5rem;
             color: #3d3d3d;
@@ -65,9 +71,12 @@
     }
 
     .services {
+        opacity: 0;  // for animation purpose
         display: flex;
         flex-direction: column;
         align-items: center;
+        transition: all .25s ease-in-out;
+
         .service-icon {
             color: $color-white;
             font-size: 7rem;
@@ -99,123 +108,33 @@
     margin-top: -9rem;
 }
 
+
+
 // section portfolio
 .section-portfolio {
-    padding: 10rem 0 20rem 0;
-    background-color: rgba($color-light-white, .45);
+    padding: 10rem 0 15rem 0;
+    // background-color: #131212;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba($color-black, .2), rgba($color-black, .3));
+    position: relative;
 
-    .portfolio-image--left {
-        width: 80%;
-        height: 30rem;
-        background-color: orange;
-        float: right;
-        position: relative;
-        border-radius: 3px;
-        box-shadow: 0rem 1.5rem 1.5rem rgba($color-black, .3);
-        transition: transform .3s ease;
-        
-        &::before {
-            content: '';
-            position: absolute;
-            width: 3rem;
-            height: 3rem;
-            top: 50%;
-            right: 0%;
-            background-color: #06b903;
-            // border-left: 1px solid $color-black;
-            // border-right: 1px solid $color-black;
-            // border-top: 1px solid $color-black;
-            // border-bottom: 1px solid $color-black;
-            transform: translate(50%, -50%) rotate(45deg);
-            z-index: -1;
-            
-
-        }
-    }
-
-    .portfolio-image--right {
-        width: 80%;
-        height: 30rem;
-        background-color: orange;
-        position: relative;
-        border-radius: 3px;
-        box-shadow: 0rem 1.5rem 1.5rem rgba($color-black, .3);
-
-        &::before {
-            content: '';
-            position: absolute;
-            width: 3rem;
-            height: 3rem;
-            top: 50%;
-            left: 0%;
-            background-color: #06b903;
-            // border-left: 1px solid $color-black;
-            // border-right: 1px solid $color-black;
-            // border-top: 1px solid $color-black;
-            // border-bottom: 1px solid $color-black;
-            transform: translate(-50%, -50%) rotate(45deg);
-            z-index: -1;
-            
-
-        }
-    }
-
-    .bg1 {
-        background: url("../images/portfolio-banner.jpg") no-repeat;
-        background-size: cover;
-        background-position: top center;
-    }
-
-    .bg2 {
-        background: url("../images/portfolio-banner2.jpg") no-repeat;
-        background-size: cover;
-        background-position: top center;
-    }
-
-    .portfolio-content--left {
+    .bg-video {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
-        height: 40rem;
-        // background-color: tomato;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 1rem 0rem;
-        h2 {
-            font-size: 3rem;
-            color: $color-dark-green;
-            margin-bottom: 1.8rem;
-            font-family: 'Lato',sans-serif;
-            font-weight: 400;
-        }
+        height: 100%;
+        opacity: 1;
+        z-index: -1;
 
-        p {
-            font-size: 1.6rem;
-            color: #3d3d3d;
+
+        &__content {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
 
-    .portfolio-content--right {
-        width: 100%;
-        height: 40rem;
-        // background-color: tomato;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        padding: 1rem 0rem;
-        h2 {
-            font-size: 3rem;
-            color: $color-dark-green;
-            margin-bottom: 1.8rem;
-            font-family: 'Lato',sans-serif;
-            font-weight: 400;
-        }
-
-        p {
-            font-size: 1.6rem;
-            color: #3d3d3d;
-            text-align: right;
-        }
-    }
 }
 
 

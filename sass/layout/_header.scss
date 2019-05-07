@@ -4,8 +4,8 @@
     font-size: 1.6rem;
     background-image: linear-gradient(to bottom, rgba($color-black, .7), rgba($color-black, .8)) ,url("../images/header.jpg");
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: top;
+    // background-attachment: fixed;
+    background-position: top center;
     background-size: cover;
     position: relative;
 
@@ -31,9 +31,10 @@
 
             h1 {
                 color: $color-white;
-                font-size: 2.8rem;
+                font-size: 3rem;
                 letter-spacing: 4px;
-                font-family: 'Lobster', cursive;
+                // font-family: 'Lobster', cursive;
+                font-family: 'Alegreya Sans SC', sans-serif;
                 font-weight: 400;
                 
                 .a {
@@ -125,47 +126,56 @@
     }
 
     &__profile {
-        width: 30rem;
-        height: 30rem;
+        width: 25rem;
+        height: 25rem;
         position: absolute;
         top: 30%;
         left: 25%;
         border-radius: 50%;
-        background-image: url("../images/profile.jpg");
+        background-image: url("../images/coffe.jpg");
         background-repeat: no-repeat;
-        background-position: bottom center;
+        background-position: center center;
         background-size: cover;
 
     }
 
     &__profileName {
         position: absolute;
-        top: 65%;
-        left: 26%;
+        top: 60%;
+        left: 23%;
         color: $color-dark-grey;
-        font-family: cursive;
+        font-family: 'Julius Sans One', sans-serif;
         
 
         &--main {
-            font-size: 3.5rem;
+            font-size: 4.5rem;
             letter-spacing: 4px;
-            font-family: 'Lobster', cursive;
+            font-family: 'Alegreya Sans SC', sans-serif;
             color: $color-light-white;
             font-weight: 300;
-            line-height: 1.7;
+            line-height: 1.5;
+            text-shadow: .1rem .1rem .2rem rgba($color-light-green, .65);
         }
 
         &--info {
-            font-size: 1.8rem;
-            font-family: cursive;
-            font-weight: 300;
+            font-size: 2.25rem;
+            font-family: 'Julius Sans One', sans-serif;
+            font-weight: 700;
             margin-top: .5rem;
+            letter-spacing: 1px;
+
+            .txt {
+                color: $color-light-green;
+                border-right: 1px solid $color-light-white;
+                margin-left: 2px;
+            }
         }
 
         &--time {
             font-size: 1.8rem;
-            font-weight: 300;
+            font-weight: 700;
             margin-top: 1rem;
+            letter-spacing: 1px;
         }
     }
 

@@ -20,24 +20,36 @@
         }
 
         .footer-menu {
-            width: 50%;
+            width: 30%;
             // background-color: aquamarine;
             &__nav {
-                display: flex;
-                justify-content: space-between;
                 font-size: 1.3rem;
-
-                li > a {
-                    cursor: pointer;
-                    padding: 1rem;
-                    transition: all .15s ease-in;
-                    color: rgb(168, 168, 168);
-                    &:hover {
-                        color: $color-white;
-                        text-decoration: underline;
+                display: flex;
+                // justify-content: space-between;
+                li {
+                    &:not(:last-child) {
+                        margin-right: 10px;
                     }
                 }
+
+                
             }
+        }
+
+    }
+
+    &__nav-link {
+        display: inline-block;
+        cursor: pointer;
+        // padding: .5rem;
+        transition: all .2s ease;
+        color: rgb(168, 168, 168);
+        &:hover {
+            background-color: #1f1e1e;
+            line-height: 1;
+            transform: scale(1.5) skewY(5deg);
+            color: $color-dark-green;
+           
         }
     }
 }
