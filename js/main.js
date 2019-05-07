@@ -55,12 +55,9 @@ $(function () {
 
             $('.portfolio-box').each(function (i) {
                 setTimeout(function () {
-                    $('.portfolio-box').eq(i).css({
-                        'opacity': '1',
-                        'transform': 'translateX(0)'
-                    });
+                    $('.portfolio-box').eq(i).addClass("isShowing");
 
-                }, 150 * (i + 1));
+                }, 100 * (i + 1));
             })
 
         }
